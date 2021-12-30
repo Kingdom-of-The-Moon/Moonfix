@@ -1,0 +1,34 @@
+{
+  "moonfix.gui.config.title": "Moonfix Config",
+
+  "moonfix.config.signs" :  "Signs",
+
+  "moonfix.config.sign_text" : "Signs Text Length Limit",
+  "moonfix.config.sign_text.tooltip" : "Toggle the limitation of sign text length",
+
+  "moonfix.config.sign_text_render" :  "Signs Text Renderer Limit*",
+  "moonfix.config.sign_text_render.tooltip" :  "Toggle the limit of the text rendered by the signs",
+  "moonfix.config.sign_text_render.tooltip2" :  "*(Requires world restart!)",
+
+  "moonfix.config.sign_edit" : "Edit Signs*",
+  "moonfix.config.sign_edit.tooltip" : "\"Use\" sign with an empty hand to edit it",
+  "moonfix.config.sign_edit.tooltip2" : "*(Server-side required!)",
+
+  "moonfix.config.blockmarkers": "Block Markers",
+
+  "moonfix.config.structure_void": "Structure Void*",
+  "moonfix.config.structure_void.tooltip": "Toggles the marker block for Structure Void",
+  "moonfix.config.structure_void.tooltip2": "*(Requires game restart!)",
+
+  "moonfix.config.tripwire": "Tripwire*",
+  "moonfix.config.tripwire.tooltip": "Toggles the marker block for Tripwire",
+  "moonfix.config.tripwire.tooltip2": "*(Requires game restart!)",
+
+  "moonfix.config.itemactions": "Item Actions",
+
+  "moonfix.config.stripped_logs": "Stripped Logs",
+  "moonfix.config.stripped_logs.tooltip": "Blocks axes from stripping logs, unless if sneak key is pressed",
+
+  "moonfix.config.dirt_path":  "Dirt Paths",
+  "moonfix.config.dirt_path.tooltip":  "Blocks shovels from creating dirt paths, unless if sneak key is pressed"
+}

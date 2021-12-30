@@ -1,0 +1,20 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "org.moon.moonfix.mixin",
+  "compatibilityLevel": "JAVA_16",
+  "client": [
+    "AxeItemAccessor",
+    "ClientPlayerInteractionManagerMixin",
+    "ClientWorldMixin",
+    "ShovelItemAccessor",
+    "SignBlockEntityRendererMixin",
+    "SignEditScreenMixin"
+  ],
+  "mixins": [
+    "SignBlockEntityMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

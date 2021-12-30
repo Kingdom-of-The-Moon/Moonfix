@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "moonfix",
+  "version": "${version}",
+
+  "name": "Moonfix",
+  "description": "Random fixes for some Minecraft weirdness",
+  "authors": [
+    "Francy-Chan"
+  ],
+  "contact": {
+    "homepage": "https://github.com/Kingdom-of-Moon/Moonfix/",
+    "sources": "https://github.com/Kingdom-of-Moon/Moonfix/",
+    "issues": "https://github.com/Kingdom-of-Moon/Moonfix/issues"
+  },
+
+  "license": "LGPL-2.1",
+  "icon": "assets/moonfix/icon.png",
+
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "org.moon.moonfix.Moonfix"
+    ],
+    "modmenu": [
+      "org.moon.moonfix.config.ModMenuConfig"
+    ]
+  },
+  "mixins": [
+    "moonfix.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.12.5",
+    "fabric": "*",
+    "minecraft": ">=1.18-",
+    "java": ">=16"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
