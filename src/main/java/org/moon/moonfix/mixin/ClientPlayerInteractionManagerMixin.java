@@ -22,13 +22,16 @@ public class ClientPlayerInteractionManagerMixin {
     //makes log strips and grass path actions be ignored unless if player is pressing sneak
     @Inject(at = @At("HEAD"), method = "interactBlock", cancellable = true)
     private void interactBlock(ClientPlayerEntity player, ClientWorld world, Hand hand, BlockHitResult hitResult, CallbackInfoReturnable<ActionResult> cir) {
+        if (player.isSneaking())
+            return;
+
         Item item = player.getStackInHand(hand).getItem();
         BlockState block = world.getBlockState(hitResult.getBlockPos());
 
         boolean path = (boolean) ConfigManager.Config.DIRT_PATH.value && item instanceof ShovelItem && ShovelItemAccessor.getPathStates().containsKey(block.getBlock());
         boolean stripped = (boolean) ConfigManager.Config.STRIPPED_LOGS.value && item instanceof AxeItem && AxeItemAccessor.getStrippedBlocks().containsKey(block.getBlock());
 
-        if (!player.isSneaking() && (path || stripped)) {
+        if (path || stripped) {
             cir.setReturnValue(ActionResult.PASS);
             cir.cancel();
         }

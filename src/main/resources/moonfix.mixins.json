@@ -12,6 +12,7 @@
     "SignEditScreenMixin"
   ],
   "mixins": [
+    "ServerWorldMixin",
     "SignBlockEntityMixin"
   ],
   "injectors": {

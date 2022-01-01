@@ -68,7 +68,14 @@ public final class ConfigManager {
         ItemActions,
 
         STRIPPED_LOGS(true),
-        DIRT_PATH(true);
+        DIRT_PATH(true),
+
+        Particles,
+
+        LOVE_PARTICLES(true) {{
+            this.tooltip = new TranslatableText("moonfix.config.love_particles.tooltip").append(" ")
+                    .append(new TranslatableText("moonfix.config.love_particles.tooltip2").setStyle(ACCENT_COLOR.apply(Style.EMPTY)));
+        }};
 
         //config data
         public Object value;
@@ -206,7 +213,7 @@ public final class ConfigManager {
         try {
             if (FILE.exists()) {
                 BufferedReader br = new BufferedReader(new FileReader(FILE));
-                JsonObject json = new JsonParser().parse(br).getAsJsonObject();
+                JsonObject json = JsonParser.parseReader(br).getAsJsonObject();
 
                 JsonElement version = json.get("CONFIG_VERSION");
                 if (version == null || version.getAsInt() < CONFIG_VERSION) {
