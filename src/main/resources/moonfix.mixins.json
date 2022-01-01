@@ -7,6 +7,7 @@
     "AxeItemAccessor",
     "ClientPlayerInteractionManagerMixin",
     "ClientWorldMixin",
+    "InGameHudMixin",
     "ShovelItemAccessor",
     "SignBlockEntityRendererMixin",
     "SignEditScreenMixin"

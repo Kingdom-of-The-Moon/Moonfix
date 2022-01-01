@@ -70,12 +70,13 @@ public final class ConfigManager {
         STRIPPED_LOGS(true),
         DIRT_PATH(true),
 
-        Particles,
+        Other,
 
         LOVE_PARTICLES(true) {{
             this.tooltip = new TranslatableText("moonfix.config.love_particles.tooltip").append(" ")
                     .append(new TranslatableText("moonfix.config.love_particles.tooltip2").setStyle(ACCENT_COLOR.apply(Style.EMPTY)));
-        }};
+        }},
+        THIRD_PERSON_CROSSHAIR(true);
 
         //config data
         public Object value;

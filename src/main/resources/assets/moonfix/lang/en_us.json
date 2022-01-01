@@ -1,18 +1,18 @@
 {
   "moonfix.gui.config.title": "Moonfix Config",
 
-  "moonfix.config.signs" :  "Signs",
+  "moonfix.config.signs": "Signs",
 
-  "moonfix.config.sign_text" : "Signs Text Length Limit",
-  "moonfix.config.sign_text.tooltip" : "Toggle the limitation of sign text length",
+  "moonfix.config.sign_text": "Signs Text Length Limit",
+  "moonfix.config.sign_text.tooltip": "Toggle the limitation of sign text length",
 
-  "moonfix.config.sign_text_render" :  "Signs Text Renderer Limit*",
-  "moonfix.config.sign_text_render.tooltip" :  "Toggle the limit of the text rendered by the signs",
-  "moonfix.config.sign_text_render.tooltip2" :  "*(Requires world reload!)",
+  "moonfix.config.sign_text_render": "Signs Text Renderer Limit*",
+  "moonfix.config.sign_text_render.tooltip": "Toggle the limit of the text rendered by the signs",
+  "moonfix.config.sign_text_render.tooltip2": "*(Requires world reload!)",
 
-  "moonfix.config.sign_edit" : "Edit Signs*",
-  "moonfix.config.sign_edit.tooltip" : "\"Use\" sign with an empty hand to edit it",
-  "moonfix.config.sign_edit.tooltip2" : "*(Server-side required!)",
+  "moonfix.config.sign_edit": "Edit Signs*",
+  "moonfix.config.sign_edit.tooltip": "\"Use\" sign with an empty hand to edit it",
+  "moonfix.config.sign_edit.tooltip2": "*(Server-side required!)",
 
   "moonfix.config.blockmarkers": "Block Markers",
 
@@ -29,12 +29,15 @@
   "moonfix.config.stripped_logs": "Stripped Logs",
   "moonfix.config.stripped_logs.tooltip": "Blocks axes from stripping logs, unless if sneak key is pressed",
 
-  "moonfix.config.dirt_path":  "Dirt Paths",
-  "moonfix.config.dirt_path.tooltip":  "Blocks shovels from creating dirt paths, unless if sneak key is pressed",
+  "moonfix.config.dirt_path": "Dirt Paths",
+  "moonfix.config.dirt_path.tooltip": "Blocks shovels from creating dirt paths, unless if sneak key is pressed",
 
-  "moonfix.config.particles": "Particles",
+  "moonfix.config.other": "Other",
 
   "moonfix.config.love_particles": "Breeding Hearts*",
   "moonfix.config.love_particles.tooltip": "Animals in breeding state produce heart particles (MC-93826)",
-  "moonfix.config.love_particles.tooltip2": "*(Server-side required!)"
+  "moonfix.config.love_particles.tooltip2": "*(Server-side required!)",
+
+  "moonfix.config.third_person_crosshair": "Third Person Crosshair",
+  "moonfix.config.third_person_crosshair.tooltip": "Enables the crosshair while in third person perspective"
 }
