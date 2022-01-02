@@ -39,5 +39,11 @@
   "moonfix.config.love_particles.tooltip2": "*(Server-side required!)",
 
   "moonfix.config.third_person_crosshair": "Third Person Crosshair",
-  "moonfix.config.third_person_crosshair.tooltip": "Enables the crosshair while in third person perspective"
+  "moonfix.config.third_person_crosshair.tooltip": "Enables the crosshair while in third person perspective",
+
+  "moonfix.config.fire_overlay": "No Fire Overlay",
+  "moonfix.config.fire_overlay.tooltip": "Disables the fire overlay when you have fire protection",
+
+  "moonfix.config.soul_fire": "Soul Fire Overlay",
+  "moonfix.config.soul_fire.tooltip": "Uses the soul fire texture for fire overlay ONLY when you stand in a soul fire block"
 }

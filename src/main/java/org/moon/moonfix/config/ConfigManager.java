@@ -76,7 +76,9 @@ public final class ConfigManager {
             this.tooltip = new TranslatableText("moonfix.config.love_particles.tooltip").append(" ")
                     .append(new TranslatableText("moonfix.config.love_particles.tooltip2").setStyle(ACCENT_COLOR.apply(Style.EMPTY)));
         }},
-        THIRD_PERSON_CROSSHAIR(true);
+        THIRD_PERSON_CROSSHAIR(true),
+        FIRE_OVERLAY(true),
+        SOUL_FIRE(true);
 
         //config data
         public Object value;
