@@ -11,6 +11,7 @@
     "EntityRenderDispatcherMixin",
     "InGameHudMixin",
     "InGameOverlayRendererMixin",
+    "MinecraftClientMixin",
     "ShovelItemAccessor",
     "SignBlockEntityRendererMixin",
     "SignEditScreenMixin"

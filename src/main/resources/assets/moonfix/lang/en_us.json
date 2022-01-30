@@ -45,5 +45,8 @@
   "moonfix.config.fire_overlay.tooltip": "Disables the fire overlay when you have fire protection",
 
   "moonfix.config.soul_fire": "Soul Fire Overlay",
-  "moonfix.config.soul_fire.tooltip": "Uses the soul fire texture for fire overlay ONLY when you stand in a soul fire block"
+  "moonfix.config.soul_fire.tooltip": "Uses the soul fire texture for fire overlay ONLY when you stand in a soul fire block",
+
+  "moonfix.config.highlight": "Player Highlight",
+  "moonfix.config.highlight.tooltip": "Enable players highlighting for any gamemode (cheaty)"
 }

@@ -78,7 +78,8 @@ public final class ConfigManager {
         }},
         THIRD_PERSON_CROSSHAIR(true),
         FIRE_OVERLAY(true),
-        SOUL_FIRE(true);
+        SOUL_FIRE(true),
+        HIGHLIGHT(true);
 
         //config data
         public Object value;
