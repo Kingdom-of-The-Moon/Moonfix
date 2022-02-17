@@ -13,5 +13,8 @@ public class Moonfix implements ClientModInitializer {
     public void onInitializeClient() {
         //init config
         ConfigManager.initialize();
+
+        //commands
+        Commands.initCommands();
     }
 }
