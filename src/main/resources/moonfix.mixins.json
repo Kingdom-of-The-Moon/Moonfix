@@ -12,6 +12,7 @@
     "InGameHudMixin",
     "InGameOverlayRendererMixin",
     "MinecraftClientMixin",
+    "ResourcePackProfileMixin",
     "ShovelItemAccessor",
     "SignBlockEntityRendererMixin",
     "SignEditScreenMixin"
