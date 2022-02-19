@@ -79,7 +79,7 @@ public final class ConfigManager {
         THIRD_PERSON_CROSSHAIR(true),
         FIRE_OVERLAY(true),
         SOUL_FIRE(true),
-        HIGHLIGHT(true);
+        HIGHLIGHT(1, 3);
 
         //config data
         public Object value;

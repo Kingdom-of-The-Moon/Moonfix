@@ -48,5 +48,8 @@
   "moonfix.config.soul_fire.tooltip": "Uses the soul fire texture for fire overlay ONLY when you stand in a soul fire block",
 
   "moonfix.config.highlight": "Player Highlight",
-  "moonfix.config.highlight.tooltip": "Enable players highlighting for any gamemode (cheaty)"
+  "moonfix.config.highlight.tooltip": "Allows player highlighting on selected gamemode (cheaty)",
+  "moonfix.config.highlight.1": "Spectator Only",
+  "moonfix.config.highlight.2": "Creative/Spec",
+  "moonfix.config.highlight.3": "Any"
 }
