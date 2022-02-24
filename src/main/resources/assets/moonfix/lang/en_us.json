@@ -14,6 +14,9 @@
   "moonfix.config.sign_edit.tooltip": "\"Use\" sign with an empty hand to edit it",
   "moonfix.config.sign_edit.tooltip2": "*(Server-side required!)",
 
+  "moonfix.config.sign_scale": "Scale Sign Model",
+  "moonfix.config.sign_scale.tooltip": "Scales the model of signs to fit the text width",
+
   "moonfix.config.blockmarkers": "Block Markers",
 
   "moonfix.config.structure_void": "Structure Void*",
@@ -32,6 +35,28 @@
   "moonfix.config.dirt_path": "Dirt Paths",
   "moonfix.config.dirt_path.tooltip": "Blocks shovels from creating dirt paths, unless if sneak key is pressed",
 
+  "moonfix.config.overlays": "Overlays",
+
+  "moonfix.config.fire_overlay": "No Fire Overlay",
+  "moonfix.config.fire_overlay.tooltip": "Disables the fire overlay when you have fire protection",
+
+  "moonfix.config.soul_fire": "Soul Fire Overlay",
+  "moonfix.config.soul_fire.tooltip": "Uses the soul fire texture for fire overlay ONLY when you stand in a soul fire block",
+
+  "moonfix.config.hacks": "Hacks",
+
+  "moonfix.config.highlight": "Player Highlight",
+  "moonfix.config.highlight.tooltip": "Allows player highlighting on selected gamemode (cheaty)",
+  "moonfix.config.highlight.1": "Spectator Only",
+  "moonfix.config.highlight.2": "Creative/Spec",
+  "moonfix.config.highlight.3": "Any",
+
+  "moonfix.config.highlight_entity": "Highlight Entity Type",
+  "moonfix.config.highlight_entity.tooltip": "Switches the type of entity to be targeted on Player Highlight (extremely cheaty)",
+  "moonfix.config.highlight_entity.1": "Player",
+  "moonfix.config.highlight_entity.2": "Living",
+  "moonfix.config.highlight_entity.3": "Any",
+
   "moonfix.config.other": "Other",
 
   "moonfix.config.love_particles": "Breeding Hearts*",
@@ -41,15 +66,6 @@
   "moonfix.config.third_person_crosshair": "Third Person Crosshair",
   "moonfix.config.third_person_crosshair.tooltip": "Enables the crosshair while in third person perspective",
 
-  "moonfix.config.fire_overlay": "No Fire Overlay",
-  "moonfix.config.fire_overlay.tooltip": "Disables the fire overlay when you have fire protection",
-
-  "moonfix.config.soul_fire": "Soul Fire Overlay",
-  "moonfix.config.soul_fire.tooltip": "Uses the soul fire texture for fire overlay ONLY when you stand in a soul fire block",
-
-  "moonfix.config.highlight": "Player Highlight",
-  "moonfix.config.highlight.tooltip": "Allows player highlighting on selected gamemode (cheaty)",
-  "moonfix.config.highlight.1": "Spectator Only",
-  "moonfix.config.highlight.2": "Creative/Spec",
-  "moonfix.config.highlight.3": "Any"
+  "moonfix.config.debug_info": "Ignore Reduced Debug",
+  "moonfix.config.debug_info.tooltip": "Completely ignores the server gamerule, reducedDebugInfo"
 }

@@ -6,6 +6,7 @@ import net.minecraft.client.network.ClientPlayerEntity;
 import net.minecraft.client.option.GameOptions;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.world.GameMode;
 import org.jetbrains.annotations.Nullable;
 import org.moon.moonfix.config.ConfigManager.Config;
@@ -24,16 +25,26 @@ public abstract class MinecraftClientMixin {
 
     @Inject(at = @At("RETURN"), method = "hasOutline", cancellable = true)
     private void hasOutline(Entity entity, CallbackInfoReturnable<Boolean> cir) {
-        int config = (int) Config.HIGHLIGHT.value;
-
-        //return
-        if (config == 0 || cir.getReturnValue() || !this.options.keySpectatorOutlines.isPressed() || entity.getType() != EntityType.PLAYER)
+        //button not pressed or already true, return
+        if (!this.options.keySpectatorOutlines.isPressed() || cir.getReturnValue())
             return;
 
+        //entity detection
+        int config = (int) Config.HIGHLIGHT_ENTITY.value;
+        if (config == 0 && entity.getType() != EntityType.PLAYER || config == 1 && !(entity instanceof LivingEntity))
+            return;
+
+        //gamemode detection and return
+        config = (int) Config.HIGHLIGHT.value;
         GameMode gamemode = this.getNetworkHandler().getPlayerListEntry(this.player.getUuid()).getGameMode();
-        if (config == 1 && gamemode == GameMode.CREATIVE || config == 2) {
+        if (config == 2 || (gamemode == GameMode.CREATIVE && config == 1) || gamemode == GameMode.SPECTATOR) {
             cir.setReturnValue(true);
         }
+    }
+
+    @Inject(at = @At("RETURN"), method = "hasReducedDebugInfo", cancellable = true)
+    private void hasReducedDebugInfo(CallbackInfoReturnable<Boolean> cir) {
+        cir.setReturnValue(cir.getReturnValue() && !(boolean) Config.DEBUG_INFO.value);
     }
 
     @Shadow @Nullable public abstract ClientPlayNetworkHandler getNetworkHandler();

@@ -53,6 +53,7 @@ public final class ConfigManager {
             this.tooltip = new TranslatableText("moonfix.config.sign_edit.tooltip").append(" ")
                     .append(new TranslatableText("moonfix.config.sign_edit.tooltip2").setStyle(ACCENT_COLOR.apply(Style.EMPTY)));
         }},
+        SIGN_SCALE(true),
 
         BlockMarkers,
 
@@ -70,6 +71,18 @@ public final class ConfigManager {
         STRIPPED_LOGS(true),
         DIRT_PATH(true),
 
+        Overlays,
+
+        FIRE_OVERLAY(true),
+        SOUL_FIRE(true),
+
+        Hacks {{
+            this.name = new TranslatableText("moonfix.config.hacks").formatted(Formatting.RED);
+        }},
+
+        HIGHLIGHT(1, 3),
+        HIGHLIGHT_ENTITY(0, 3),
+
         Other,
 
         LOVE_PARTICLES(true) {{
@@ -77,9 +90,7 @@ public final class ConfigManager {
                     .append(new TranslatableText("moonfix.config.love_particles.tooltip2").setStyle(ACCENT_COLOR.apply(Style.EMPTY)));
         }},
         THIRD_PERSON_CROSSHAIR(true),
-        FIRE_OVERLAY(true),
-        SOUL_FIRE(true),
-        HIGHLIGHT(1, 3);
+        DEBUG_INFO(true);
 
         //config data
         public Object value;
