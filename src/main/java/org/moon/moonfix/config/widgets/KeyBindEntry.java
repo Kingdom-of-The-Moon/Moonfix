@@ -63,7 +63,7 @@ public class KeyBindEntry extends ConfigListWidget.Entry {
             this.toggle.setMessage(new LiteralText("> ").styled(ConfigManager.ACCENT_COLOR).append(this.toggle.getMessage()).append(" <"));
         }
         else if (!this.binding.isUnbound()) {
-            for (KeyBinding key : MinecraftClient.getInstance().options.keysAll) {
+            for (KeyBinding key : MinecraftClient.getInstance().options.allKeys) {
                 if (key != this.binding && this.binding.equals(key)) {
                     this.toggle.setMessage(this.toggle.getMessage().shallowCopy().formatted(Formatting.RED));
                     break;

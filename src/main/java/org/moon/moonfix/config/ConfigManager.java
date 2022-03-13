@@ -11,8 +11,8 @@ import net.minecraft.text.Style;
 import net.minecraft.text.Text;
 import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Formatting;
+import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.moon.moonfix.Moonfix;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -31,7 +31,7 @@ public final class ConfigManager {
     public static final UnaryOperator<Style> ACCENT_COLOR = (style) -> style.withColor(0xFF72B7);
 
     //logger
-    public static final Logger LOGGER = Moonfix.LOGGER;
+    public static final Logger LOGGER = LogManager.getLogger();
 
     //mod name
     public static final String MOD_NAME = "moonfix";

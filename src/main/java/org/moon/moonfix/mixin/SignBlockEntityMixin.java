@@ -29,6 +29,7 @@ public class SignBlockEntityMixin {
         SignBlockEntity sign = (SignBlockEntity) (Object) this;
         player.openEditSignScreen(sign);
 
+        cir.setReturnValue(true);
         cir.cancel();
     }
 }

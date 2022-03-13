@@ -42,7 +42,7 @@ public class ConfigScreen extends Screen {
     }
 
     @Override
-    public void onClose() {
+    public void close() {
         ConfigManager.applyConfig();
         ConfigManager.saveConfig();
         this.client.setScreen(parentScreen);

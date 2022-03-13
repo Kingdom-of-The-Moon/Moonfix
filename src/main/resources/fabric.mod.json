@@ -17,10 +17,13 @@
   "license": "LGPL-2.1",
   "icon": "assets/moonfix/icon.png",
 
-  "environment": "client",
+  "environment": "*",
   "entrypoints": {
     "client": [
       "org.moon.moonfix.Moonfix"
+    ],
+    "server": [
+      "org.moon.moonfix.MoonfixServer"
     ],
     "modmenu": [
       "org.moon.moonfix.config.ModMenuConfig"

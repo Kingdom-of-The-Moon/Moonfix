@@ -26,7 +26,7 @@ public abstract class MinecraftClientMixin {
     @Inject(at = @At("RETURN"), method = "hasOutline", cancellable = true)
     private void hasOutline(Entity entity, CallbackInfoReturnable<Boolean> cir) {
         //button not pressed or already true, return
-        if (!this.options.keySpectatorOutlines.isPressed() || cir.getReturnValue())
+        if (!this.options.spectatorOutlinesKey.isPressed() || cir.getReturnValue())
             return;
 
         //entity detection
