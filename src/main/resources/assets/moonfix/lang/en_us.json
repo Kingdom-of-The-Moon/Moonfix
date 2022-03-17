@@ -67,5 +67,9 @@
   "moonfix.config.third_person_crosshair.tooltip": "Enables the crosshair while in third person perspective",
 
   "moonfix.config.debug_info": "Ignore Reduced Debug",
-  "moonfix.config.debug_info.tooltip": "Completely ignores the server gamerule, reducedDebugInfo"
+  "moonfix.config.debug_info.tooltip": "Completely ignores the server gamerule, reducedDebugInfo",
+
+  "moonfix.config.rabbit_fall_damage": "Rabbit Fall Damage*",
+  "moonfix.config.rabbit_fall_damage.tooltip": "Toggles if rabbits should ignore fall damage",
+  "moonfix.config.rabbit_fall_damage.tooltip2": "*(Server-side required!)"
 }

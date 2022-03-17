@@ -90,7 +90,11 @@ public final class ConfigManager {
                     .append(new TranslatableText("moonfix.config.love_particles.tooltip2").setStyle(ACCENT_COLOR.apply(Style.EMPTY)));
         }},
         THIRD_PERSON_CROSSHAIR(true),
-        DEBUG_INFO(true);
+        DEBUG_INFO(true),
+        RABBIT_FALL_DAMAGE(false) {{
+            this.tooltip = new TranslatableText("moonfix.config.rabbit_fall_damage.tooltip").append(" ")
+                    .append(new TranslatableText("moonfix.config.rabbit_fall_damage.tooltip2").setStyle(ACCENT_COLOR.apply(Style.EMPTY)));
+        }};
 
         //config data
         public Object value;

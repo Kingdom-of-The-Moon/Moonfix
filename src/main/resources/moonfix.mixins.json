@@ -18,6 +18,7 @@
     "SignEditScreenMixin"
   ],
   "mixins": [
+    "RabbitEntityMixin",
     "ServerWorldMixin",
     "SignBlockEntityMixin"
   ],
